@@ -4,7 +4,6 @@ import subprocess, requests, time, os
 
 hwid = subprocess.check_output('wmic csproduct get uuid').decode().split('\n')[1].strip()'''
 auth2 = f"\nreq = requests.get('{input('Enter Your Pastebin Link: ')}').text"
-
 auth3 = """
 try:
     if hwid in req:
